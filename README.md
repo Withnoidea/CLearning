@@ -103,7 +103,7 @@ int main()
 
 在64位平台是8个字节
 
-## 结构体
+### 结构体
 
 ```
 struct Stu{
@@ -127,5 +127,52 @@ printf("name = %s age = %d sex = %s id = %s\n", ps->name, ps->age, ps->sex, ps-
 >id);
 ```
 
+## 分支结构循环语句
 
+### switch
 
+switch语句中，没有办法直接实现分支，搭配break才能实现真正的分支。
+
+### while
+
+#### while语句的执行流程
+
+![image-20250405003343357](https://raw.gitmirror.com/Withnoidea/PicGoDemo/blog/img/202504050033463.png)
+
+#### break和continue
+
+1. continue在while循环中的作用：
+   1. continue是用于终止本次循环的，也就是本次循环中continue后边的代码不会再执行，
+      而是直接跳转到while语句的判断部分。进行下一次循环的入口判断。	
+2. break在while循环中的作用：
+   1. 其实在循环中只要遇到break，就停止后期的所有的循环，直接终止循环。
+      所以：while中的break是用于永久终止循环的。
+
+### for循环
+
+```c++
+for(表达式1; 表达式2; 表达式3)
+循环语句;
+```
+
+#### 表达式1
+
+表达式1为初始化部分，用于初始化循环变量的。
+
+#### 表达式2
+
+表达式2为条件判断部分，用于判断循环时候终止。
+
+#### 表达式3
+
+表达式3为调整部分，用于循环条件的调整。
+
+#### for循环的流程
+
+![image-20250405003650573](https://raw.gitmirror.com/Withnoidea/PicGoDemo/blog/img/202504050036624.png)
+
+### do while
+
+循环至少执行一次，使用的场景有限，所以不是经常使用。
+
+![image-20250405004356310](https://raw.gitmirror.com/Withnoidea/PicGoDemo/blog/img/202504050043354.png)
