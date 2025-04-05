@@ -4,7 +4,7 @@
 int main()
 {
 	char input[10] = {0};
-	system("shutdown -s -t 60");
+	system("shutdown -s -t 3");
 	while(1)
 	{
 		printf("电脑将在1分钟内关机，如果输入：我是猪，就取消关机!\n请输入:>");
